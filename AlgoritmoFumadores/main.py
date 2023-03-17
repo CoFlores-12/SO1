@@ -31,22 +31,22 @@ def draw(ag, f1,f2,f3, process):
     print("             ╚═══════════╩═════════════╩═════════════╩══════════════╝")
     print("           Fumador_T      ")
     print("              ___  ")
-    print("             |•.•| ")
-    print("             /[I]\ ")
-    print("             _| \_ ")
+    print("             %\".\"% ")
+    print("             /[U]\ ")
+    print("             _| |_ ")
     print("               {}   ".format(arrowF1))
     print("AGENTE   ┏━━━━━━━━━━━━┓   Fumador_P")
     print(" ___     ┃            ┃      ___")
-    print("|•.•|    ┃  {}  ┃     |•.•|".format(ag.getIng1()))
-    print("/[I]\  {} ┃  {}  ┃  {}  /[I]\ ".format(arrowAg,ag.getIng2(), arrowF2))
+    print("|•.•|    ┃  {}  ┃     J•-•L".format(ag.getIng1()))
+    print("/[I]\  {} ┃  {}  ┃  {}  -[:]- ".format(arrowAg,ag.getIng2(), arrowF2))
     print("_| \_    ┃            ┃     _| \_")
     print("         ┗━━━━━━━━━━━━┛")
     print("               {}    ".format(arrowF3))
     print("            Fumador_C      ")
     print("               ___  ")
-    print("              |•.•|")
-    print("              /[I]\ ")
-    print("              _| \_ ")
+    print("              |•_•|")
+    print("              /[Y]\ ")
+    print("              _| |_ ")
     print("                   ")
 
 class Fumador:
@@ -96,7 +96,6 @@ async def runAlgorithm():
     fumador2 = Fumador(' PAPEL  ')
     fumador3 = Fumador('CERILLOS')
     nExec = 5
-
     for n in range(nExec):
         ag.status = 1
         fumador1.status = 0
