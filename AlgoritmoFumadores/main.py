@@ -15,37 +15,39 @@ def draw(ag, process):
     arrowF1 = ' ' #active: ▼
     arrowF2 = ' ' #active: ◄
     arrowF3 = ' ' #active: ▲
-    if(ag.estatus == 1):
+    if(ag.status == 1):
         arrowAg = '►'
+
     print("Process:",process)
     print("             ╔═══════════╦═════════════╦═════════════╦══════════════╗")
     print("             ║   AGENTE  ║  Fumador_T  ║  Fumador_P  ║  Fumador_C   ║")
     print("             ╠═══════════╬═════════════╬═════════════╬══════════════╣")
-    print("             ║     {}     ║      {}      ║      {}      ║      {}       ║".format(ag.estatus,0,0,0))
+    print("             ║     {}     ║      {}      ║      {}      ║      {}       ║".format(ag.status,0,0,0))
     print("             ╚═══════════╩═════════════╩═════════════╩══════════════╝")
-    print("            Fumador_T      ")
-    print("                   ")
-    print("                   ")
-    print("                   ")
-    print("                   ")
-    print("                   ")
+    print("           Fumador_T      ")
+    print("              ___  ")
+    print("             |•.•| ")
+    print("             /[I]\ ")
+    print("             _| \_ ")
+    print("               {}   ".format(arrowF1))
     print("AGENTE   ┏━━━━━━━━━━━━┓   Fumador_P")
-    print(" ___     ┃            ┃")
-    print("|•.•|    ┃  {}  ┃".format(ag.getIng1()))
-    print("/[I]\  {} ┃  {}  ┃".format(arrowAg,ag.getIng2()))
-    print("_| \_    ┃            ┃")
+    print(" ___     ┃            ┃      ___")
+    print("|•.•|    ┃  {}  ┃     |•.•|".format(ag.getIng1()))
+    print("/[I]\  {} ┃  {}  ┃  {}  /[I]\ ".format(arrowAg,ag.getIng2(), arrowF2))
+    print("_| \_    ┃            ┃     _| \_")
     print("         ┗━━━━━━━━━━━━┛")
+    print("               {}    ".format(arrowF3))
     print("            Fumador_C      ")
-    print("                   ")
-    print("                   ")
-    print("                   ")
-    print("                   ")
+    print("               ___  ")
+    print("              |•.•|")
+    print("              /[I]\ ")
+    print("              _| \_ ")
     print("                   ")
 
 
 
 class agente:
-    estatus=0
+    status=0
     allIngs = [" TABACO ", " PAPEL  ", "CERILLOS"]
     ing1="        "
     ing2="        "
@@ -91,7 +93,7 @@ Fumador_T.status=1
 
 
     for n in range(nExec):
-        ag.estatus = 1
+        ag.status = 1
         ag.ing1 = "        "
         ag.ing2 = "        "
         clear()
