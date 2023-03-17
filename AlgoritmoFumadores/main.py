@@ -96,6 +96,7 @@ async def runAlgorithm():
     fumador2 = Fumador(' PAPEL  ')
     fumador3 = Fumador('CERILLOS')
     nExec = 5
+
     for n in range(nExec):
         ag.status = 1
         fumador1.status = 0
