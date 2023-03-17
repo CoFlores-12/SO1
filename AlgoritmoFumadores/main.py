@@ -42,6 +42,8 @@ def draw(ag, process):
     print("                   ")
     print("                   ")
 
+
+
 class agente:
     estatus=0
     allIngs = [" TABACO ", " PAPEL  ", "CERILLOS"]
@@ -63,7 +65,31 @@ class agente:
 
 async def runAlgorithm():
     ag = agente()
+    ag2 = agente()
     nExec = 5
+
+def verificar ingredientes(ing1,ing2,self)
+if (ing1=CERILLOS or ing2=PAPEL)
+if(ing1=PAPEL or ing2=CERILLOS)
+self.fumando()
+return true:
+def fumando()
+
+
+def run()
+Fumador_T=fumadores(TABACO)
+ag.generateIngs()
+if (Fumador_T.verificaringrednientes(ag.ing1,ag.ing2))
+ag.status=0
+Fumador_T.status=1
+
+
+
+
+
+
+
+
     for n in range(nExec):
         ag.estatus = 1
         ag.ing1 = "        "
@@ -74,6 +100,10 @@ async def runAlgorithm():
         clear()
         draw(ag, "Agente Coloco los ingredientes en la mesa")
         await asyncio.sleep(2)
+        if
+        if
+        if
+
 
 if __name__ == "__main__":
     asyncio.run(runAlgorithm())
